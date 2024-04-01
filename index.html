@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Receitas por Ingredientes</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-background"></div>
+        <h1 class="site-title">Receitas Express</h1>
+    </div>
+    <div class="container">
+        <div class="form-container">
+            <h2>Selecione os itens da sua despensa:</h2>
+            <form id="formBuscaReceitas">
+
+
+                <div class="ingredient-section">
+                    <p class="section-title">Legumes e Vegetais:</p>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Tomate" class="ingredient-checkbox"> <span class="ingredient-label">Tomate</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Cenoura" class="ingredient-checkbox"> <span class="ingredient-label">Cenoura</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Ervilha" class="ingredient-checkbox"> <span class="ingredient-label">Ervilha</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Cebola" class="ingredient-checkbox"> <span class="ingredient-label">Cebola</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Alho" class="ingredient-checkbox"> <span class="ingredient-label">Alho</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Cebolinha" class="ingredient-checkbox"> <span class="ingredient-label">Cebolinha</span></label>
+
+                </div>
+
+
+                <div class="ingredient-section">
+                    <p class="section-title">Temperos:</p>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Uva Passa" class="ingredient-checkbox"> <span class="ingredient-label">Uva Passa</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Tempero de galinha em pó" class="ingredient-checkbox"> <span class="ingredient-label">Tempero de galinha</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Óleo" class="ingredient-checkbox"> <span class="ingredient-label">Óleo</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Sal" class="ingredient-checkbox"> <span class="ingredient-label">Sal</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Molho bechamel" class="ingredient-checkbox"> <span class="ingredient-label">Molho bechamel</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Molho de tomate" class="ingredient-checkbox"> <span class="ingredient-label">Molho de tomate</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Cheiro Verde" class="ingredient-checkbox"> <span class="ingredient-label">Cheiro Verde</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Vinho tinto seco" class="ingredient-checkbox"> <span class="ingredient-label">Vinho tinto seco</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Caldo de carne" class="ingredient-checkbox"> <span class="ingredient-label">Caldo de carne</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Pimenta" class="ingredient-checkbox"> <span class="ingredient-label">Pimenta</span></label>
+
+                </div>
+
+
+                <div class="ingredient-section">
+                    <p class="section-title">Carnes:</p>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Frango" class="ingredient-checkbox"> <span class="ingredient-label">Frango</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Carne moída" class="ingredient-checkbox"> <span class="ingredient-label">Carne moída</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Presunto" class="ingredient-checkbox"> <span class="ingredient-label">Presunto</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Salsinha" class="ingredient-checkbox"> <span class="ingredient-label">Salsinha</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Ovos" class="ingredient-checkbox"> <span class="ingredient-label">Ovos</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Filé mignon" class="ingredient-checkbox"> <span class="ingredient-label">Filé mignon</span></label>
+
+
+                </div>
+
+                <div class="ingredient-section">
+                    <p class="section-title">Laticinios:</p>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Leite" class="ingredient-checkbox"> <span class="ingredient-label">Leite</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Manteiga" class="ingredient-checkbox"> <span class="ingredient-label">Manteiga</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Queijo muçarela" class="ingredient-checkbox"> <span class="ingredient-label">Queijo muçarela</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Queijo parmesão" class="ingredient-checkbox"> <span class="ingredient-label">Queijo parmesão</span></label>
+
+                </div>
+                <div class="ingredient-section">
+                    <p class="section-title">Outros:</p>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Chocolate" class="ingredient-checkbox"> <span class="ingredient-label">Chocolate</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Maionese" class="ingredient-checkbox"> <span class="ingredient-label">Maionese</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Batata Palha" class="ingredient-checkbox"> <span class="ingredient-label">Batata Palha</span></label>
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Maça" class="ingredient-checkbox"> <span class="ingredient-label">Maça</span></label>            
+                    <label class="ingredient-item"><input type="checkbox" name="ingredientes[]" value="Fermento" class="ingredient-checkbox"> <span class="ingredient-label">Fermento</span></label>            
+                </div>
+                </div>
+                <input type="submit" value="Buscar Receitas">          
+            </form>
+        </div>
+        <div class="result-container" id="resultadoReceitas">
+            <!-- Aqui serão exibidos os resultados -->
+        </div>
+    </div>
+
+    <script>
+        // Função para fazer a requisição AJAX e exibir os resultados na página
+        function buscarReceitas() {
+            var formData = new FormData(document.getElementById("formBuscaReceitas"));
+
+            // Requisição AJAX
+            var xhr = new XMLHttpRequest();
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === XMLHttpRequest.DONE) {
+                    if (xhr.status === 200) {
+                        document.getElementById("resultadoReceitas").innerHTML = xhr.responseText;
+                    } else {
+                        console.error("Erro ao buscar receitas:", xhr.status);
+                    }
+                }
+            };
+            xhr.open("POST", "buscar_receitas.php");
+            xhr.send(formData);
+        }
+
+        // Chamada da função ao enviar o formulário
+        document.getElementById("formBuscaReceitas").addEventListener("submit", function(event) {
+            event.preventDefault();
+            buscarReceitas();
+        });
+    </script>
+</body>
+</html>       
